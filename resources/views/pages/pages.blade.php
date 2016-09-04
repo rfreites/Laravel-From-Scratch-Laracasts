@@ -1,17 +1,6 @@
 @extends('layout')
-
-	@section('header')
-		<style>
-			body{
-				background-color: gray;
-				color: #fff;
-			}
-		</style>
-	@stop
-
+	
 	@section('content')
-
-            <div class="content">
             
             	@if (empty($people))
             		
@@ -39,13 +28,4 @@
                		
                	@endunless
                	
-	@stop
-	
-	@section('footer')
-		
-		<script type="text/javascript">
-			console.log("custom alert people page");
-       	</script>
-		
-	@stop
-	
+     @stop

@@ -26,3 +26,12 @@ Route::get('/people', function (){
 	return view('pages.people', compact('people'));
 });
 
+Route::get('/pages', 'PagesController@pages');
+
+
+//Card Routes
+
+Route::get('cards','CardsController@index');
+
+Route::get('cards/{card}','CardsController@show');
+
