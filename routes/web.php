@@ -29,9 +29,13 @@ Route::get('/people', function (){
 Route::get('/pages', 'PagesController@pages');
 
 
-//Card Routes
+//Cards
 
 Route::get('cards','CardsController@index');
 
 Route::get('cards/{card}','CardsController@show');
+
+//Comments Cards
+
+Route::post('cards/{card}/notes', 'NotesController@store');
 
